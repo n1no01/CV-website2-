@@ -98,6 +98,24 @@ h3{
     margin-left: 5%;
 }
 
+.projects{
+    display: inline-flex;
+    justify-content:center;
+}
+
+
+.projects-screenshots{
+    width: 80%;
+    height: 200px;
+}
+
+.projects-screenshots-phone{
+    display: none;
+}
+
+.projects-screenshots:hover{
+    transform: scale(1.04);
+}
 .contact-me {
     border-bottom: 3px solid white;
     margin-top: 12%;
@@ -178,6 +196,24 @@ h3{
     .img1, .img2, .img3 {
         width: 25%;
         margin: 0;
+    }
+    .screenshot{
+        width:40%;
+    }
+
+    .projects{
+        display: inline-flex;
+        justify-content:center;
+    }
+    
+    .projects-screenshots{
+        display: none;
+    }
+
+    .projects-screenshots-phone{
+        margin-top: 20px;
+        display:inline;
+        width: 60%;
     }
     
     .contact-me {
