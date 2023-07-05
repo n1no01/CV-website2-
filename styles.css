@@ -35,8 +35,10 @@ a {
     text-decoration: none;
 }
 
-a:hover, a:active, a:visited { 
+a:hover, a:active, a:visited, a:link { 
     color: white; 
+    background-color: transparent;
+    text-decoration: none;
 }
 
 .arrow-btn{
