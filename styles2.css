@@ -113,7 +113,7 @@ p.icon{
     }
        
     h1{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         width: 60%;
         margin:30% auto 5% auto;
     }
@@ -133,6 +133,7 @@ p.icon{
     p.additional{
         margin-bottom: 4%;
         width: 60%;
+        font-size: 1.4rem;
     }
     
     .nationalTeam-photo, .slamDunk-photo{
