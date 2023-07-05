@@ -107,10 +107,15 @@ p.icon{
     #section1 , #section2{
         height:auto;
     }
+
+     #section2{
+        padding-top: 10%;
+    }
        
     h1{
-        margin-top: 30%;
         font-size: 1.4rem;
+        width: 60%;
+        margin:30% auto 5% auto;
     }
     
     .bio{
@@ -122,8 +127,7 @@ p.icon{
     }
 
     hr{
-        width: 20%;
-        margin:4% auto 0 auto;
+        display: none;
     }
     
     p.additional{
