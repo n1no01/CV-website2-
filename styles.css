@@ -125,7 +125,7 @@ h3{
     padding-bottom: 3%;
 }
 
-.contact-me-btn {
+#contact-me-btn {
     background-color: #ffffffb6;
     border-radius: 8px;
     font-weight: bold;
@@ -133,7 +133,7 @@ h3{
     padding: 10px 20px 10px 20px;
 }
 
-.contact-me-btn:hover {
+#contact-me-btn:hover {
     background-color: #ffffff57;
 }
 
