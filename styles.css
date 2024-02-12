@@ -2,33 +2,64 @@ body{
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    text-align: center;
-    font-family: "Merriweather", serif;
-    color: #ffffffd4;
-    background-image: url(images/sky.webp);
-    background-size: cover;
+    text-align: center; 
+    font-family: "Helvetica Neue", Helvetica;
+    color:black;
+    background-color: rgb(192, 238, 183);
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-.top-container {
-    padding-top: 5%;
-    height: 100vh;
+header{
+    color:rgb(192, 238, 183);
+    text-align: left;
+    background-color: black;
+    height: 40vh;
 }
 
-.header1{
-    color: #ffffffd4;
-     background: -webkit-linear-gradient(#ffffff, #4f6292);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: white 0px 0px 80px;
+header h1{
+    margin-left: 8%;
+    font-size: 3.5rem;
     margin-bottom: 0;
-    margin-top: 8%;
-    font-family: "Sacramento", cursive;
-    font-size: 6em;
+}
+
+header p{
+    margin-top: 0;
+    margin-left: 8%;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-top: 2%;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.container-right h2{
+    margin-bottom: 0;
+    font-size: 2.5em;
+}
+
+.container-right hr{
+    width: 60%;  
+    height: 3px;
+    background-color: black;
+}
+
+.container-right p{
+    font-size: 1.3rem;
+    display: inline-block;
+    width: 70%;
+}
+
+.container-right p a{
+    font-family: "Helvetica Neue", Helvetica;
+    color:black;
 }
 
 a {
@@ -36,13 +67,14 @@ a {
 }
 
 a:hover, a:active, a:visited, a:link { 
-    color: white; 
+    color: black; 
     background-color: transparent;
     text-decoration: none;
 }
 
 .arrow-btn{
-    margin-top: 200px;
+    margin-top: 30px;
+    width:4%;
 }
 
 .arrow-btn:hover{
@@ -51,46 +83,39 @@ a:hover, a:active, a:visited, a:link {
 
 #profile-photo{
     width: 200px;
-    padding-top: 2%;
-    display: block;
-    margin: 0 auto;
+    padding-top: 5%;
 }
 
-h2{
-    font-size: 1.6em;
-}
-
-h3{
-    font-size: 1.2em;
-   
+hr{
+    background-color: black;
+    height:1px;
 }
 
 .mySkills{
     margin-top: 5%;
 }
 
-.student-description{
-    font-size: 1.3em;
-}
-
 .skills-description{
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .skill-row {
     padding-top: 1%;
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
-    line-height: 1.5;
+    margin-bottom: 3%;
+    line-height: 1.3;
 }
 
 .skill-1, .skill-3{
     display: flex;
+    align-items: center;
 }
 
 .skill-2{
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
 }
 
 .img1, .img3 {
@@ -106,7 +131,6 @@ h3{
     justify-content:center;
 }
 
-
 .projects-screenshots{
     width: 80%;
     height: 200px;
@@ -119,48 +143,51 @@ h3{
 .projects-screenshots:hover{
     transform: scale(1.04);
 }
+
 .contact-me {
-    border-bottom: 3px solid white;
-    margin-top: 12%;
-    padding-bottom: 3%;
+    margin-top: 8%;
+    padding-bottom: 0%;
 }
 
-#contact-me-btn {
-    background-color: #ffffffb6;
-    border-radius: 8px;
-    font-weight: bold;
-    color: black;
-    padding: 10px 20px 10px 20px;
+.img-logo{
+    width: 4%;
+    padding: 0 1% 2%;
 }
 
-#contact-me-btn:hover {
-    background-color: #ffffff57;
-}
-
-.bottom-container {
-    padding-top: 2%;
-    margin-bottom: 0;
-    padding-bottom: 0.5%;
-}
-
-.icons-links {
-    width: 2%;
-    padding: 0 0.3%;
-}
-
-.icons-links:hover{
-    transform: scale(1.3);
+.img-logo:hover{
+    transform: scale(1.1);
 }
 
 @media screen and (max-width:600px) { 
-    .header1{
-        margin-bottom: 0;
-        margin-top: 50%;
-        font-size: 3.5em;
+    header p{
+        font-size: 1rem;
+        padding-top: 7%;
+    }
+    
+    header h1{
+        font-size: 1.8rem;
     }
 
+    .container{
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+    .container-right h2{
+        font-size: 1.5rem;
+    }
+
+    .container-right hr{  
+        height: 2px;
+    }
+    
     .arrow-btn{
-        margin-top: 80%;
+        display: none;
+    }
+    
+    .first-hr{
+        margin-top: 2%;
     }
     
     #profile-photo {
@@ -168,28 +195,22 @@ h3{
         width: 25%;
     }
 
-    .student-description{
-        width: 60%;
-        margin: 0 auto;
-        padding-bottom: 3%;
-    }
-
     .mySkills{
-        margin: 10% 0;
+        margin: 5% 0;
     }
-
-    .skills-description{
-        font-size: 16px;
-    }
+    
     h3{
         display: none;
     }
-
+    
+    .skills-description{
+        font-size: 1rem;
+    }
+   
     .skill-row {
         padding-top: 1%;
-        padding-bottom: 10%;
+        padding-bottom: 5%;
         width: 60%;
-        line-height: 1.5;
     }
     
     .skill-1, .skill-2, .skill-3{
@@ -200,6 +221,7 @@ h3{
         width: 25%;
         margin: 0;
     }
+    
     .screenshot{
         width:40%;
     }
@@ -220,19 +242,10 @@ h3{
     }
     
     .contact-me {
-        border-bottom: 3px solid white;
-        margin-top: 20%;
-        padding-bottom: 7%;
-    }
-    .get-in-touch{
-        display: block;
-    }
-    #contact-me-btn{
-        padding: 8px 16px;
+        margin-top: 10%;
     }
      
-    .icons-links {
-        padding: 1%;
-        width: 25px;
+    .img-logo{
+        width: 6%;
     }
 }
