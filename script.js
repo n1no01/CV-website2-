@@ -1,4 +1,4 @@
 function ScrollToSkills(){
-    const profilePhoto = document.querySelector("#profile-photo");
+    const profilePhoto = document.querySelector(".mySkills");
     profilePhoto.scrollIntoView(true);
 }
