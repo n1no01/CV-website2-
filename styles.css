@@ -134,6 +134,7 @@ hr{
 .projects-screenshots{
     width: 80%;
     height: 200px;
+    border: 5px solid black;
 }
 
 .projects-screenshots-phone{
@@ -239,6 +240,7 @@ hr{
         margin-top: 20px;
         display:inline;
         width: 60%;
+        border: 2px solid black;
     }
     
     .contact-me {
